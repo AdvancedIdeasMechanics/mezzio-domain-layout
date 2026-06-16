@@ -20,3 +20,10 @@ For route.php Middleware use.
 `use AdvancedIdeasMechanics\MezzioDomainLayout\Middleware\DomainLayoutMiddleware;`
 
 `$app->get('/', [DomainLayoutMiddleware::class, App\Handler\HomePageHandler::class], 'home');`
+
+#### Example Configuration ####
+
+Create a file in config/autoload/domain_layouts.local.php or domain_layouts.globoal.php.
+
+`return [ 'domain_layouts' => [ 'example1.com' => 'layout::example1', 'example2.com' => 'layout::example2' ] ];`
+
