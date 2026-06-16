@@ -23,7 +23,7 @@ For route.php Middleware use.
 
 #### Example Configuration ####
 
-Create a file in config/autoload/domain_layouts.local.php or domain_layouts.globoal.php.
+Create a file in config/autoload/domain_layouts.local.php or domain_layouts.global.php.
 
 `return [ 'domain_layouts' => [ 'example1.com' => 'layout::example1', 'example2.com' => 'layout::example2' ] ];`
 
