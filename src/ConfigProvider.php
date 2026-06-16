@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AdvancedIdeasMechanics\MezzioDomainLayout\Middleware;
+namespace AdvancedIdeasMechanics\MezzioDomainLayout;
 
 class ConfigProvider
 {
