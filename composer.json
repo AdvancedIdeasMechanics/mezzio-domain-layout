@@ -1,0 +1,43 @@
+{
+  "name": "advancedideasmechanics/mezzio-domain-layout",
+  "description": "PSR-15 Middleware for Mezzio Framework to change layout based on host.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "keywords": [
+    "matthewpallotta",
+    "advancedideasmechanics",
+    "mezzio",
+    "php",
+    "library",
+    "layout"
+  ],
+  "authors": [
+    {
+      "name": "Matthew Pallotta",
+      "email": "matt@advanced.im",
+      "homepage": "https://advanced.im"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/advancedideasmechanics/mezzio-domain-layout/issues",
+    "email": "support@advanced.im",
+    "source": "https://github.com/advancedideasmechanics/mezzio-domain-layout"
+  },
+  "homepage": "https://advanced.im/product/mezzio-domain-layout",
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+    "psr/http-server-middleware": "^1.0",
+    "mezzio/mezzio-template": "^2.0 || ^3.0",
+    "mezzio/mezzio-router": "^3.0 || ^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AdvancedIdeasMechanics\\MezzioDomainLayout\\": "src/"
+    }
+  },
+  "extra": {
+    "laminas": {
+      "config-provider": "AdvancedIdeasMechanics\\MezzioDomainLayout\\ConfigProvider"
+    }
+  }
+}
