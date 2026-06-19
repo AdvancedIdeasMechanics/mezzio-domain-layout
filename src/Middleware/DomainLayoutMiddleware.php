@@ -35,7 +35,7 @@ class DomainLayoutMiddleware implements MiddlewareInterface
             return $handler->handle($request);
         }
 
-        $host  = $request->getUri()->getHost();
+        $host  = $request->getHeaderLine('X-Forwarded-Host') ?: $request->getHeaderLine('Host') ?: $request->getUri()->getHost();
 
         $layout = $this->domainLayoutMap[$host] ?? 'layout::default';
 
